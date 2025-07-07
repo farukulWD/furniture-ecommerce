@@ -1,12 +1,12 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import ProductCard from "@/components/product-card"
-import CategoryGrid from "@/components/category-grid"
-import FeaturedProducts from "@/components/featured-products"
-import TopRatedProducts from "@/components/top-rated-products"
-import TodaysDeal from "@/components/todays-deal"
-import FeatureIcons from "@/components/feature-icons"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import ProductCard from "@/components/product-card";
+import CategoryGrid from "@/components/category-grid";
+import FeaturedProducts from "@/components/featured-products";
+import TopRatedProducts from "@/components/top-rated-products";
+import TodaysDeal from "@/components/todays-deal";
+import FeatureIcons from "@/components/feature-icons";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
           <div className="md:col-span-2 grid grid-rows-2 gap-4">
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=300&width=600"
+                src="/images/banner/couch.jpg?height=300&width=600"
                 alt="Red Sofa Set"
                 width={600}
                 height={300}
@@ -27,20 +27,20 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=150&width=300"
+                  src="/images/banner/small_couch_left.jpg?height=150&width=300"
                   alt="Gray Sofa Set"
                   width={300}
                   height={150}
-                  className="w-full h-full object-cover rounded"
+                  className="w-full h-full rounded"
                 />
               </div>
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=150&width=300"
+                  src="/images/banner/small_couch_right.jpg?height=150&width=300"
                   alt="Beige Sofa"
                   width={300}
                   height={150}
-                  className="w-full h-full object-cover rounded"
+                  className="w-full h-full  rounded"
                 />
               </div>
             </div>
@@ -51,13 +51,16 @@ export default function Home() {
               <p className="text-sm mt-1">Find your perfect office chair</p>
             </div>
             <Image
-              src="/placeholder.svg?height=200&width=200"
+              src="/images/banner/office_chair.jpg?height=200&width=200"
               alt="Office Chair"
-              width={200}
-              height={200}
-              className="mx-auto my-4"
+              width={500}
+              height={700}
+              className="w-full h-full rounded-md  my-4"
             />
-            <Button variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
+            <Button
+              variant="outline"
+              className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
+            >
               Shop Now
             </Button>
           </div>
@@ -81,7 +84,10 @@ export default function Home() {
             <div>
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-bold">Office Furniture</h2>
-                <Link href="/categories/office-furniture" className="text-xs text-gray-500 hover:underline">
+                <Link
+                  href="/categories/office-furniture"
+                  className="text-xs text-gray-500 hover:underline"
+                >
                   View all
                 </Link>
               </div>
@@ -113,7 +119,10 @@ export default function Home() {
             <div>
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-bold">Home Furniture</h2>
-                <Link href="/categories/home-furniture" className="text-xs text-gray-500 hover:underline">
+                <Link
+                  href="/categories/home-furniture"
+                  className="text-xs text-gray-500 hover:underline"
+                >
                   View all
                 </Link>
               </div>
@@ -147,5 +156,5 @@ export default function Home() {
         <FeatureIcons />
       </main>
     </div>
-  )
+  );
 }

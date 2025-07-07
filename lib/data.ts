@@ -7,11 +7,36 @@ export const categories = [
     name: "Office Furniture",
     slug: "office-furniture",
     subcategories: [
-      { id: "101", name: "Chairs", slug: "chairs", image: "/placeholder.svg?height=60&width=60" },
-      { id: "102", name: "Sofas", slug: "sofas", image: "/placeholder.svg?height=60&width=60" },
-      { id: "103", name: "Side Table", slug: "side-table", image: "/placeholder.svg?height=60&width=60" },
-      { id: "104", name: "Coffee Table", slug: "coffee-table", image: "/placeholder.svg?height=60&width=60" },
-      { id: "105", name: "Living Room", slug: "living-room", image: "/placeholder.svg?height=60&width=60" },
+      {
+        id: "101",
+        name: "Chairs",
+        slug: "chairs",
+        image: "/images/categories/chair.jpg",
+      },
+      {
+        id: "102",
+        name: "Sofas",
+        slug: "sofas",
+        image: "/images/categories/couch.jpg",
+      },
+      {
+        id: "103",
+        name: "Side Table",
+        slug: "side-table",
+        image: "/images/categories/side_table.jpg",
+      },
+      {
+        id: "104",
+        name: "Coffee Table",
+        slug: "coffee-table",
+        image: "/images/categories/coffee_table.jpg",
+      },
+      {
+        id: "105",
+        name: "Sofas",
+        slug: "sofas",
+        image: "/images/categories/couch.jpg",
+      },
     ],
   },
   {
@@ -19,14 +44,39 @@ export const categories = [
     name: "Home Furniture",
     slug: "home-furniture",
     subcategories: [
-      { id: "201", name: "Living Room", slug: "living-room", image: "/placeholder.svg?height=60&width=60" },
-      { id: "202", name: "Bedroom", slug: "bedroom", image: "/placeholder.svg?height=60&width=60" },
-      { id: "203", name: "Dining Room", slug: "dining-room", image: "/placeholder.svg?height=60&width=60" },
-      { id: "204", name: "Kitchen", slug: "kitchen", image: "/placeholder.svg?height=60&width=60" },
-      { id: "205", name: "Bathroom", slug: "bathroom", image: "/placeholder.svg?height=60&width=60" },
+      {
+        id: "201",
+        name: "Living Room",
+        slug: "living-room",
+        image: "/images/categories/living_room.jpg",
+      },
+      {
+        id: "202",
+        name: "Bedroom",
+        slug: "bedroom",
+        image: "/images/categories/bedroom.jpg",
+      },
+      {
+        id: "203",
+        name: "Dining Room",
+        slug: "dining-room",
+        image: "/images/categories/dinning_room.jpg",
+      },
+      {
+        id: "204",
+        name: "Kitchen",
+        slug: "kitchen",
+        image: "/images/categories/kitchen_room.jpg",
+      },
+      {
+        id: "205",
+        name: "Bathroom",
+        slug: "bathroom",
+        image: "/images/categories/bathroom.jpg",
+      },
     ],
   },
-]
+];
 
 export const products = [
   {
@@ -86,7 +136,8 @@ export const products = [
     bestselling: false,
     latest: true,
     rating: 4.6,
-    description: "Premium sectional sofa with modular design. Rearrange to fit your space perfectly.",
+    description:
+      "Premium sectional sofa with modular design. Rearrange to fit your space perfectly.",
   },
   {
     id: "5",
@@ -116,7 +167,8 @@ export const products = [
     bestselling: true,
     latest: false,
     rating: 4.7,
-    description: "Enhanced visitor chair with comfortable armrests. Perfect for extended meetings and conferences.",
+    description:
+      "Enhanced visitor chair with comfortable armrests. Perfect for extended meetings and conferences.",
   },
   {
     id: "7",
@@ -160,7 +212,8 @@ export const products = [
     bestselling: true,
     latest: false,
     rating: 4.8,
-    description: "Complete dining set with table and 6 chairs. Perfect for family meals and entertaining guests.",
+    description:
+      "Complete dining set with table and 6 chairs. Perfect for family meals and entertaining guests.",
   },
   {
     id: "10",
@@ -174,7 +227,8 @@ export const products = [
     bestselling: false,
     latest: true,
     rating: 4.9,
-    description: "Elegant king size bed frame with storage drawers. Combines style with practicality.",
+    description:
+      "Elegant king size bed frame with storage drawers. Combines style with practicality.",
   },
   {
     id: "11",
@@ -206,4 +260,4 @@ export const products = [
     description:
       "Spacious bookshelf with 5 adjustable shelves. Perfect for displaying books, photos, and decorative items.",
   },
-]
+];

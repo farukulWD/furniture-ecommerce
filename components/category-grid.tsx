@@ -1,6 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
-import { categories } from "@/lib/data"
+import Image from "next/image";
+import Link from "next/link";
+import { categories } from "@/lib/data";
 
 export default function CategoryGrid() {
   return (
@@ -11,7 +11,10 @@ export default function CategoryGrid() {
           <div key={category.slug}>
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-medium">{category.name}</h3>
-              <Link href={`/categories/${category.slug}`} className="text-xs text-gray-500 hover:underline">
+              <Link
+                href={`/categories/${category.slug}`}
+                className="text-xs text-gray-500 hover:underline"
+              >
                 View all
               </Link>
             </div>
@@ -24,13 +27,19 @@ export default function CategoryGrid() {
                 >
                   <div className="bg-gray-100 rounded-lg p-2 w-full aspect-square flex items-center justify-center mb-1 group-hover:bg-gray-200">
                     <Image
-                      src={subcategory.image || "/placeholder.svg?height=60&width=60"}
+                      src={
+                        subcategory.image ||
+                        "/placeholder.svg?height=60&width=60"
+                      }
                       alt={subcategory.name}
-                      width={60}
-                      height={60}
+                      width={120}
+                      height={120}
+                      className="w-full h-full object-cover rounded-md"
                     />
                   </div>
-                  <span className="text-xs text-center group-hover:text-red-600">{subcategory.name}</span>
+                  <span className="text-xs text-center group-hover:text-red-600">
+                    {subcategory.name}
+                  </span>
                 </Link>
               ))}
             </div>
@@ -38,5 +47,5 @@ export default function CategoryGrid() {
         ))}
       </div>
     </div>
-  )
+  );
 }
